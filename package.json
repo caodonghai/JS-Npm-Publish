@@ -1,0 +1,31 @@
+{
+  "name": "world-slide",
+  "version": "1.0.0",
+  "description": "文字轮播",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf lib && mkdir lib",
+    "lib": "npm run clean && babel src --out-dir lib --copy-files",
+    "prepublish": "npm run lib"
+  },
+  "author": "東",
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "tsc-init": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-istanbul": "^6.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "install": "^0.13.0",
+    "npm": "^7.15.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
